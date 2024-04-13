@@ -1,0 +1,96 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  .container {
+    /* background-color: black; */
+    width: 100dvw;
+    padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+    /* children of container class */
+    .display-container {
+      flex: 1;
+      padding: 20px 30px;
+      background-color: black;
+      width: 100%;
+      color: white;
+      margin-bottom: 20px;
+  
+  
+      /* children of diplay-container */
+      .display{
+  margin-bottom: 20px;
+        /* children of display class */
+        h1 {
+          
+          font-size: 26px;
+        }
+        img {
+          width: 100%;
+        }
+      }
+  
+      .description{
+      
+        margin-bottom: 10px;
+  
+        /* children of description */
+        h3{
+  
+          margin-bottom: 20px;
+        }
+      }
+    }
+  
+    .search{
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      /* justify-content: center; */
+      align-items: center;
+      gap: 20px;
+      /* children of serach class */
+      .search-box{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+  min-width: 412px;
+        /* children of search-box class */
+  #search-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+        button{
+          cursor: pointer;
+          padding: 1px 10px;
+        }
+      }
+  
+      .history-box{
+        
+        /* children of history box */
+      
+        .histories{
+          padding: 5px;
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+        }
+        
+      }
+      h2{
+        text-align: center;
+      }
+    }
+  }
+  
+  
+  /* Media Query */
+  /* @media screen {
+    
+  } */
